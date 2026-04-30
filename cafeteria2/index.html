@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Chango&family=Coiny&family=Walter+Turncoat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Cafeteria Himawari</title>
+    <link rel="shortcut icon" href="/sprites/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <button id="logobtn" onclick="Show()"><img src="/sprites/himawari logo.png" id="logo"></button>
+        <button id="logobtn2" onclick="Hide()"><img src="sprites/himawari logo.png" id="logo"></button>
+        <script>
+            function Show() {
+                const vidiv = document.getElementById("rick");
+                const vid = document.getElementById("rickvideo");
+                vidiv.style.opacity = 1;
+                vidiv.style.zIndex = 90;
+                document.getElementById("logobtn").style.zIndex = 1;
+                document.getElementById("logobtn2").style.zIndex = 67;
+                vid.play();
+            }
+            function Hide() {
+                const vidiv = document.getElementById("rick");
+                const vid = document.getElementById("rickvideo");   
+                vidiv.style.opacity = 0;
+                vidiv.style.zIndex = 0;
+                document.getElementById("logobtn").style.zIndex = 67;
+                document.getElementById("logobtn2").style.zIndex = 1;
+                vid.pause();
+                vid.currentTime = 0;
+            }
+        </script>
+        <ul>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#sobre">
+                <li>Sobre</li>
+            </a>
+            <a href="">
+                <li>Cardápio</li>
+            </a>
+            <a href="">
+                <li>Mural</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="rickcontainer" id="rick">
+        <video id="rickvideo" controls><source src="sprites/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4" type="video/mp4" ></video>
+    </div>
+    <div class="container">
+        <div id="home">
+            
+        </div>
+        <div class="first">
+
+        </div>
+        <div class="second">
+            <div class="sub1">
+                <img src="sprites/alvo.png" id="alvo">
+                <h1>Nosso objetivo</h1><br>
+                <p>Nascemos com o objetivo de iluminar <br>
+                e trazer sabor para suas manhãs, além de <br>
+                querermos ajudar artistas a se divulgarem <br>
+                ou apenas deixarem seu registro conosco.</p>
+                <div class="subhover"></div>
+            </div>
+            <div class="sub2">
+                <img src="sprites/escada.png" id="escada">
+                <h1>Como começamos</h1> <br>
+                <p>A cafeteria surgiu originalmente com um sonho<br>
+                de criar um lugar seguro e confortável, que servisse<br>
+                café, bolos e guloseimas, ao mesmo tempo que haja<br>
+                um espaço para cosplaying e exposição de artes!</p>
+                <div class="subhover"></div>
+            </div>
+        </div>
+        <div class="third" id="sobre">
+            <div class="sub1">
+                <img src="sprites/perfil1.png" id="owner">
+                <img src="sprites/ble.jpg" id="naho">
+                <img src="sprites/delicia.jpeg" id="shino">
+                <h1>Quem somos?</h1>
+                <p>Somos três grandes amigos que sonham com a ideia de uma cafeteria 
+                tematizada de girassol, com uma história e personagens próprios.    
+                Oferecendo um local aconchegante para todos, para que possam relaxar, 
+                focar em seus trabalhos e aproveitar um delicioso café.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
