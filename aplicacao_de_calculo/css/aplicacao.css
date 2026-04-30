@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+}
+
+.principal {
+    background-color: bisque;
+    background-position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}

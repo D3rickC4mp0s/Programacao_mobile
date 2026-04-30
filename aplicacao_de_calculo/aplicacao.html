@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aplicacao.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button id="btn_somar" onclick="somar()">Soma</button>
+        <button id="btn_subtrair" onclick="subtrair()">Subtração</button>
+        <button id="btn_multiplicar" onclick="multiplicar()">Multiplicação</button>
+        <button id="btn_dividir" onclick="dividir()">Divisão</button>
+
+        <script>
+            function somar() {
+            let num1=Number(document.getElementById("num1").value);
+            let num2=Number(document.getElementById("num2").value);
+            let soma=num1+num2;
+            alert("A soma é: "+soma)
+            }
+        </script>
+        <script>
+            function subtrair() {
+                let subtração=num1-num2;
+                alert("O resto é: "+subtração)
+            }
+        </script>
+    </div>
+</body>
+</html>
